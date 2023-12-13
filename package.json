@@ -15,5 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10"
   }
 }

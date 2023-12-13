@@ -4,12 +4,16 @@
   "description": "First npm project",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [
     "npm",
     "node"
   ],
   "author": "Marius k",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }

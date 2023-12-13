@@ -1,8 +1,7 @@
 'use strict';
 console.log('app.js application running');
 const dayjs = require('dayjs');
-const relativeTime = require('dayjs/plugin/relativeTime');
-dayjs.extend(relativeTime);
+const { tillKaledos } = require('./modules/time');
 
 const now = dayjs();
 console.log(now.format());
@@ -12,8 +11,4 @@ console.log(now.format('YYYY-MMM-DD, dddd'));
 const tenDaysAhead = now.add(10, 'Day');
 console.log('tenDaysAhead', tenDaysAhead.format('YYYY-MMM-DD, dddd'));
 
-// kiek dienu iki kaledu
-const tillKaledos = now.to('2023-12-25');
-console.log('tillKaledos ===', tillKaledos);
-
-console.log('Hello again !!!');
+console.log('tillKaledos ===', tillKaledos, 'till christmas');
